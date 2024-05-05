@@ -1,0 +1,151 @@
+@font-face {
+font-family: "exo";
+src: url("font/Exo2.0-Light.otf") format('opentype');
+font-style: normal;
+font-weight: normal;
+}
+@font-face {
+font-family: "exo";
+src: url("font/Exo2.0-Medium.otf") format('opentype');
+font-style: normal;
+font-weight: bold;
+}
+@font-face {
+font-family: "exo";
+src: url("font/Exo2.0-LightItalic.otf") format('opentype');
+font-style: italic;
+font-weight: normal;
+}
+@font-face {
+font-family: "exo";
+src: url("font/Exo2.0-ExtraLight.otf") format('opentype');
+font-style: normal;
+font-weight: light;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: exo, sans-serif;
+	background-color: rgb(255, 255, 255);
+}
+
+/* описание навигации */
+.nav {
+    width: 100%;   
+    text-align: center;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;    
+	letter-spacing: 1px;
+	position: sticky;
+	top: 0px;
+	background-color: rgb(255, 255, 255);
+	z-index: 3;
+}
+.nav > ul {
+	list-style:none;
+}
+li > a {
+	text-decoration: none;
+	color: #000;
+}
+.main-menu > li {
+	display: inline-block;
+	width: 125px;
+}
+.main-menu > li:hover {
+	background: #222;
+	color: #fff;
+}
+.main-menu a:hover {
+	color:#fff;
+}
+.here	{
+		background: #222;
+		color: #fff;
+}
+
+
+
+/* рамочка */
+.borderrr{
+	background-color: #222;	
+	margin: 0px 5px 5px 5px;				/* body торчит слево-справо-cнизу на 6*/
+	font-size: 0;					/* без этого расстояние между элементами равно межбуквенному */
+	text-align: center;
+}
+/* СТИЛЬ ДЛЯ КАРТИНКИ */
+.square{
+	display: inline-flex;
+	cursor: pointer;
+	width: 30vw;
+	height: 30vw;
+	background-color: #eee;
+	border: 1px solid #fff;
+	margin: 0.5vw;
+	overflow: hidden;
+	min-width: 320px;
+	min-height: 320px;
+	position: relative;
+}
+ .square * {
+	transition: .3s linear;
+}
+.square img {
+	height: 100%;	
+	width: 100%;
+	filter: grayscale(100%);
+}
+.square:hover img {
+	transform: scale(1.2);
+	filter: grayscale(0%);
+}
+/* на картинке */
+.square_title {
+	color: #808184;
+	font-size: 20px;
+	font-weight: light;
+	text-transform: uppercase;
+	text-align: left;
+    padding: 10px 15px;
+    background-color: #fff; 
+    width: 50%;	
+	position: absolute;
+	bottom: 50px;
+}
+/* нижняя навигация */
+hr {
+	background: #fff;
+	border: 0;
+	height: 1px;
+	width: 100%;
+	margin: 0px 0px  10px 0px;
+} 
+.footer{
+    padding: 10px 20px 10px 20px;	
+	height: 32px;
+	position: relative;
+	bottom: 10px;
+	}
+.letter{
+	font-family: exo, sans-serif;
+	color: #fff;
+	font-size: 12px;	
+	float: left;
+}
+.donload{
+	font-family: exo, sans-serif;
+	color: #fff;
+	font-size: 12px;
+	float: right;
+}
+.telegram{
+	height: 16px;
+	width: 20px;
+	display: inline-flex;
+	position: absolute;
+	left: 45%;
+}

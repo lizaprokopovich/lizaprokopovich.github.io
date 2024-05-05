@@ -1,0 +1,140 @@
+@font-face {
+font-family: "exo";
+src: url("font/Exo2.0-Light.otf") format('opentype');
+font-style: normal;
+font-weight: normal;
+}
+@font-face {
+font-family: "exo";
+src: url("font/Exo2.0-Medium.otf") format('opentype');
+font-style: normal;
+font-weight: bold;
+}
+@font-face {
+font-family: "exo";
+src: url("font/Exo2.0-LightItalic.otf") format('opentype');
+font-style: italic;
+font-weight: normal;
+}
+@font-face {
+font-family: "exo";
+src: url("font/Exo2.0-ExtraLight.otf") format('opentype');
+font-style: normal;
+font-weight: light;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: exo, sans-serif;
+	background-color: #222;
+}
+
+/* описание навигации */
+.nav {
+    width: 100%;   
+    text-align: center;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;    
+	letter-spacing: 1px;
+	position: sticky;
+	top: 0px;
+	background-color: rgb(255, 255, 255);
+	z-index: 3;
+}
+.nav > ul {
+	list-style:none;
+}
+li > a {
+	text-decoration: none;
+	color: #000;
+}
+.main-menu > li {
+	display: inline-block;
+	width: 125px;
+}
+.main-menu > li:hover {
+	background: #222;
+}
+.main-menu a:hover {
+	color:#fff;
+}
+.here	{
+		background: #222;
+		color: #fff;
+}
+
+p {
+	font-family: exo, sans-serif;
+	color: #fff;
+	font-size: 16px;	
+	text-align: center;
+	margin: 0 0 15px 0;
+	padding: 30vh 10px 10px 10px;
+}
+h1 {
+	font-family: exo, sans-serif;
+	color: #646464;
+	font-size: 1.5vw;
+	font-weight: light;	
+	text-align: left;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+}
+.square{
+	border: 1px solid #fff;
+	width: 97vw;
+	height: 85vh;
+	min-width: 320px;
+	min-height: 320px;
+	position: relative;	
+	margin: 10px auto 10px auto;
+}
+.post{
+	font-family: exo, sans-serif;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+}
+.post > a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* нижняя навигация */
+hr {
+	background: #fff;
+	border: 0;
+	height: 1px;
+	width: 100%;
+	margin: 0px 0px  10px 0px;
+} 
+.footer{
+    padding: 10px 20px 10px 20px;	
+	height: 32px;
+	position: relative;
+	bottom: 10px;
+	}
+.letter{
+	font-family: exo, sans-serif;
+	color: #fff;
+	font-size: 12px;	
+	float: left;
+}
+.donload{
+	font-family: exo, sans-serif;
+	color: #fff;
+	font-size: 12px;
+	float: right;
+}
+.telegram{
+	height: 16px;
+	width: 20px;
+	display: inline-flex;
+	position: absolute;
+	left: 45%;
+}
